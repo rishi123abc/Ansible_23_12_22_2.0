@@ -2,12 +2,12 @@
 - hosts: all
   become: yes
   tasks:
-  - name: I want to install webserver
+  - name: i want to install webserver
     apt:
       name: apache2
       state: present
-  - name: I want to start webserver on ubuntu nodes
-    apt:
-      service: 
+
+  - name: i want to start webserver on ubuntu nodes
+    service:
       name: apache2
       state: started
