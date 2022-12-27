@@ -14,7 +14,7 @@
       state: started
     when: ansible_os_family =="Debian"
 
-  - name: I want to install webserver httpd
+  - name: I want to install webserver 
     yum:
       name: httpd
       state: present
@@ -22,6 +22,6 @@
 
   - name: i want to start web server on Amazon linux mac
     service:  
-      name: https
+      name: httpd
       state: started
     when: ansible_os_family =="RedHat"
