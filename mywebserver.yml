@@ -4,24 +4,24 @@
   tasks:
   - name: i want to install webserver
     apt:
-      name: apache2
+      name: {{mywebpackonubuntu}}
       state: present
     when: ansible_os_family =="Debian"
 
   - name: i want to start webserver on ubuntu nodes
     service:
-      name: apache2
+      name: {{mywebpackonubuntu}}
       state: started
     when: ansible_os_family =="Debian"
 
   - name: I want to install webserver 
     yum:
-      name: httpd
+      name: {{mywebpackonRedHat}}
       state: present
     when: ansible_os_family =="RedHat"
 
   - name: i want to start web server on Amazon linux mac
     service:  
-      name: httpd
+      name: {{mywebpackonRedHat}}
       state: started
     when: ansible_os_family =="RedHat"

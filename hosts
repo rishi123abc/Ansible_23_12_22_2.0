@@ -1,2 +1,16 @@
+
+{webserver}
 172.31.45.68
 172.31.37.106
+172.31.37.22
+
+{app}
+172.31.45.68
+172.31.37.10
+172.31.37.22
+
+
+{webserver:vars}
+var=value
+mywebpackonubuntu=apache222
+mywebpackonRedHat=httpd
