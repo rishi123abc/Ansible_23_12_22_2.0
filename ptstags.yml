@@ -1,15 +1,15 @@
 ---
-- hosts: all
+- hosts: 172.31.37.22
   become: yes
   tasks:
   - name: install wget
-    apt:
+    yum:
      name: wget
      state: present
     tags: mywget
 
   - name: install tree
-    apt: 
+    yum: 
      name: tree
      state: present
     tags: mylovelytree 
