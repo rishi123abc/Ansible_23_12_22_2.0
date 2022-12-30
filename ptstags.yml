@@ -3,13 +3,13 @@
   become: yes
   tasks:
   - name: install wget
-    yum:
+    apt:
      name: wget
      state: present
     tags: mywget
 
   - name: install tree
-    yum: 
+    apt: 
      name: tree
      state: present
     tags: mylovelytree 
