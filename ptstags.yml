@@ -1,0 +1,15 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: install wget
+    apt:
+     name: wget
+     state: present
+    tags: mywget
+
+  - name: install tree
+    apt: 
+     name: tree
+     state: present
+    tags: mylovelytree 
