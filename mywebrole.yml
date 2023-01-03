@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.37.106
+- hosts: all
   become: yes
   roles:
-   - {role: myrole, when: anssible_os_family =="Debian"}
+   - myrole 
